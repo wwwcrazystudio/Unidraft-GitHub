@@ -1,0 +1,19 @@
+$default-font: "RobotoRegular", sans-serif;
+$medium-font: "RobotoMedium", sans-serif;
+$bold-font: "RobotoBold", sans-serif;
+$accent: #EE2F24;
+$body-color: #000;
+$border-color: #D9DADC;
+$table-hover: #F5F5F5;
+$table-head-color : #8B8B8B;
+$accent-2: #0288D1;
+$btn--accent-2: #4CAF50;
+$btn--accent-2-hover: #409443;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
