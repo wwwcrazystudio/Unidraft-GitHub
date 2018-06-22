@@ -45,7 +45,10 @@ gulp.task('js', function() {
         'app/libs/mixitup/dist/mixitup.min.js',
         'app/libs/slick-carousel/slick/slick.min.js',
         'app/libs/autosize/dist/autosize.min.js',
-		'app/js/common.js', // Always at the end
+        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+        'app/libs/bootstrap-year-calendar-master/js/bootstrap-year-calendar.js',
+        'app/libs/bootstrap-year-calendar-master/js/languages/bootstrap-year-calendar.ru.js',
+        'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)

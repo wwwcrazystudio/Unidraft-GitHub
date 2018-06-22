@@ -29,6 +29,20 @@
 <body>
 
 
+<!--<div class="preloader" id="preloader">-->
+
+	<!--<div class="sk-folding-cube">-->
+
+		<!--<div class="sk-cube sk-cube-1"></div>-->
+		<!--<div class="sk-cube sk-cube-2"></div>-->
+		<!--<div class="sk-cube sk-cube-4"></div>-->
+		<!--<div class="sk-cube sk-cube-3"></div>-->
+
+	<!--</div>-->
+
+<!--</div>-->
+
+
 	<div class="page-inner">
 
 
@@ -303,7 +317,7 @@
 
 							</table>
 
-							<button class="btn">Добавить подрядчика</button>
+							<a href="#projects-page-popup" class="btn open-popup-link tabs-content__item-btn">Добавить подрядчика</a>
 
 						</div>
 
@@ -538,6 +552,91 @@
 
 
 
+
+		<div class="popup projects-page-popup mfp-hide" id="projects-page-popup">
+
+			<div class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><defs><style>.cls-1{fill:#8b8b8b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="knowledge"><path class="cls-1" d="M10,1,9,0,5,4,1,0,0,1,4,5,0,9l1,1L5,6l4,4,1-1L6,5Z"/></g></g></svg>
+			</div>
+
+			<div class="popup__title">Создать компанию</div>
+
+			<div class="projects-page-popup__block">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Название компании</span>
+					<input type="text" name="" class="form-field">
+				</label>
+
+			</div>
+
+			<div class="projects-page-popup__block projects-page-popup__block--selects-wrapper">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Правовая форма</span>
+					<select class="form-field form-field--select form-field--drop">
+						<option value="">ООО</option>
+						<option value="Значение 1">ООО</option>
+						<option value="Значение 2">ООО-1</option>
+						<option value="Значение 3">ООО-2</option>
+					</select>
+				</label>
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Группа</span>
+					<select class="form-field form-field--select form-field--drop">
+						<option value="">Заказчик</option>
+						<option value="Значение 1">Заказчик</option>
+						<option value="Значение 2">Заказчик-1</option>
+						<option value="Значение 3">Заказчик-2</option>
+					</select>
+				</label>
+
+			</div>
+
+
+			<div class="projects-page-popup__block">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Адрес</span>
+					<input type="text" name="" class="form-field">
+				</label>
+
+			</div>
+
+			<div class="projects-page-popup__block">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Телефон</span>
+					<input type="text" name="" class="form-field">
+				</label>
+
+			</div>
+
+			<div class="projects-page-popup__block">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Сайт</span>
+					<input type="text" name="" class="form-field">
+				</label>
+
+			</div>
+
+			<div class="projects-page-popup__block">
+
+				<label class="set-form-label">
+					<span class="set-form-label__title">Комментарий</span>
+					<textarea class="form-field form-field--textarea"></textarea>
+				</label>
+
+			</div>
+
+			<div class="set-form__btns-wrap timesheets-popup__btns">
+				<button  class="btn timesheets-popup__btn-submit">Сохранить</button>
+				<input type="reset" name="" value="Отменить" class="set-form__reset">
+			</div>
+
+		</div>
 
 
 	</div>
