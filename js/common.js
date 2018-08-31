@@ -1,17 +1,4 @@
-document.body.onload = function() {
 
-    setTimeout( function() {
-
-        var preloader = document.getElementById('preloader');
-
-        if ( !preloader.classList.contains('done') ) {
-            preloader.classList.add('done');
-        }
-
-
-    }, 1000 );
-
-};
 
 
 
@@ -47,7 +34,6 @@ $(function() {
 
 //    скрываем дропдаун при клике на любое место страницы, кроме самого дропдауна
 //    второй ответ https://ru.stackoverflow.com/questions/140922/%D0%9A%D0%B0%D0%BA-%D0%B2-javascript-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-div-%D0%BF%D1%80%D0%B8-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B5-%D0%B2%D0%BD%D0%B5-%D1%8D%D1%82%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B8%D0%B2%D0%B0
-//    http://api.jquery.com/fadetoggle/
 
     $(document).on('click', function(e) {
         if (!$(e.target).closest(".project-menu__toggler-wrapper").length) {
@@ -59,33 +45,11 @@ $(function() {
 
 // стилизация селектоы
 //    https://selectize.github.io/selectize.js/
-    styleSelects();
-    function styleSelects() {
-        var xhr;
-        var select_state, $select_state;
-        var select_city, $select_city;
-
-        $select_state = $('.form-field--drop').selectize({
-            onChange: function(value) {
-                if (!value.length) return;
-                select_city.disable();
-                select_city.clearOptions();
-                select_city.load(function(callback) {
-                    xhr && xhr.abort();
-                    xhr = $.ajax({
-                        url: 'http://www.corsproxy.com/api.sba.gov/geodata/primary_city_links_for_state_of/' + value + '.json',
-                        success: function(results) {
-                            select_city.enable();
-                            callback(results);
-                        },
-                        error: function() {
-                            callback();
-                        }
-                    })
-                });
-            }
-        });
+    autoSelectize();
+    function autoSelectize() {
+        $select_state = $('.autoselectize').selectize({});
     }
+
 
 
 
@@ -484,10 +448,14 @@ $(function() {
         $input
             .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
             .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
-    })
+    });
 
 
 
+    //селект критиков
+    $('select').selectize({
+        plugins: ['remove_button']
+    });
 
 
 

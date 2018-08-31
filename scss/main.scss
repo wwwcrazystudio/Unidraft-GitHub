@@ -3527,3 +3527,56 @@ $spinkit-spinner-color: #337ab7 !default;
 	border-bottom: 1px solid $accent-2 !important;
 }
 
+
+//селект критиков
+.selectize-control.multi .selectize-input.has-items {
+	padding: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.selectize-control.multi .selectize-input > div.item {
+	display: inline-flex;
+	height: 28px;
+	align-items: center;
+	background: #F5F5F5;
+	color: #8B8B8B;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-weight: 100;
+	font-size: 12px;
+	border: none;
+	text-shadow: none;
+	margin: 0;
+	margin-right: 5px;
+	box-shadow: none;
+}
+
+.selectize-control.multi .selectize-input [data-value].active {
+	background-color: #F5F5F5 !important;
+	background: none;
+	filter: none;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+	z-index: 1;
+	/* fixes ie bug (see #392) */
+	position: absolute;
+	top: 0;
+	right: 5px;
+	bottom: 0;
+	width: auto;
+	font-weight: 400;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	border-left: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove:hover {
+	background: none;
+}
